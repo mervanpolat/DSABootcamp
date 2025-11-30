@@ -28,10 +28,8 @@ public class Questions {
     static int maximumValue(int[]arr){
         int max = Integer.MIN_VALUE;
 
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
-            }
+        for (int j : arr) {
+            if (j > max) max = j;
         }
         return max;
     }
@@ -43,9 +41,7 @@ public class Questions {
 
         int max = arr[start];
         for (int i = start; i <= end; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
-            }
+            if (arr[i] > max) max = arr[i];
         }
         return max;
     }
